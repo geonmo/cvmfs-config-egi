@@ -1,0 +1,1 @@
+# cvmfs-config-egi
