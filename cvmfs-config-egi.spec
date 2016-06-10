@@ -2,7 +2,7 @@ Summary: CernVM File System EGI Configuration and Public Keys
 Name: cvmfs-config-egi
 Version: 1.0
 Release: 1%{?dist}
-Source0: %{name}-%{version}.tgz
+Source0: https://github.com/cvmfs/%{name}/archive/%{name}-%{version}.tar.gz
 
 BuildArch: noarch
 Group: Applications/System
