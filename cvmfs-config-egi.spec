@@ -16,8 +16,7 @@ Obsoletes: cvmfs-init-scripts < 1.0.21
 Provides: cvmfs-init-scripts = 1.0.22
 Obsoletes: cvmfs-config-default
 
-Conflicts: cvmfs < 2.2.0
-Conflicts: cvmfs-server < 2.2.0
+Conflicts: cvmfs < 2.1.20
 
 %description
 Default configuration parameters and public keys for CernVM-FS
