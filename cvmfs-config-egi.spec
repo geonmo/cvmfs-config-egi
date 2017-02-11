@@ -1,6 +1,6 @@
 Summary: CernVM File System EGI Configuration and Public Keys
 Name: cvmfs-config-egi
-Version: 1.1
+Version: 2.0
 Release: 1%{?dist}
 Source0: https://github.com/cvmfs/%{name}/archive/%{name}-%{version}.tar.gz
 
@@ -46,6 +46,12 @@ done
 %config %{_sysconfdir}/cvmfs/config.d/*
 
 %changelog
+* Sat Feb 11 2017 Dave Dykstra <dwd@fnal.gov> - 2.0-1
+- Jump to version 2.0-1 to be greater than cvmfs-config-default versions.
+- Add CVMFS_CONFIG_REPO_REQUIRED=yes to 60-egi.conf.  This is supported
+  beginning in cvmfs-2.3.3.
+- Add IHEP stratum one to config-egi.egi.eu.conf.
+
 * Fri Jun 24 2016 Dave Dykstra <dwd@fnal.gov> - 1.1-1
 - Add CVMFS_FALLBACK_PROXY to config-egi.egi.eu.conf.
 
