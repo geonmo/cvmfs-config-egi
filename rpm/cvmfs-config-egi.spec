@@ -33,13 +33,14 @@ make install-redhat DESTDIR=$RPM_BUILD_ROOT
 %config %{_sysconfdir}/cvmfs/config.d/*
 
 %changelog
-* Mon Aug 05 2019 Dave Dykstra <dwd@fnal.gov> - 2.4-1
+* Wed Aug 07 2019 Dave Dykstra <dwd@fnal.gov> - 2.4-1
 - Jump to version 2.4-1 to indicate parity with the current version of
   cvmfs-config-osg.
 - Remove Conflicts with old cvmfs version (< 2.1.20).
 - Add debian packaging, move redhat packaging to rpm directory.
 - Change the server urls for the config-egi repository to use openhtc.io
   aliases when the proxy url can use DIRECT.
+- Change the alias klei.nikhef.nl to cvmfs01.nikhef.nl.
 
 * Sat Feb 11 2017 Dave Dykstra <dwd@fnal.gov> - 2.0-1
 - Jump to version 2.0-1 to be greater than cvmfs-config-default versions.
