@@ -1,7 +1,9 @@
 Summary: CernVM File System EGI Configuration and Public Keys
 Name: cvmfs-config-egi
 Version: 2.4
-Release: 1%{?dist}
+# The release_prefix macro is used in the OBS prjconf, don't change its name
+%define release_prefix 1
+Release: %{release_prefix}%{?dist}
 Source0: https://github.com/cvmfs/%{name}/archive/%{name}-%{version}.tar.gz
 
 BuildArch: noarch
