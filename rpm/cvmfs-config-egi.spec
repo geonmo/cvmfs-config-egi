@@ -19,7 +19,10 @@ Provides: cvmfs-init-scripts = 1.0.22
 Obsoletes: cvmfs-config-default
 
 %description
-Default configuration parameters and public keys for CernVM-FS
+Recommended set of CernVM-FS configuration parameters and public keys
+for European grid sites.  The rpm only configures the configuration
+repository /cvmfs/config-egi.egi.eu and the rest of the configuration is
+there.
 
 %prep
 %setup
