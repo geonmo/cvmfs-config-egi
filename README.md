@@ -4,11 +4,11 @@
 
 This is the source for the CernVM File System (CVMFS) configuration
 files for the European Grid Infrastructure (EGI).  It includes packaging
-for Redhat and Debian.
+for Red Hat and Debian.
 
-### Redhat
+### Red Hat
 
-End-user documentation for Redhat systems can be found
+End-user documentation for Red Hat Enterprise Linux systems can be found
 [here](https://github.com/cvmfs-contrib/egi-cvmfs/).
 
 ### Debian
