@@ -1,7 +1,7 @@
 # created by obsupdate.sh, do not edit by hand
 Debtransform-Tar: cvmfs-config-egi-2.4.tar.gz
 Format: 1.0
-Version: 2.4.2
+Version: 2.4.3
 Binary: cvmfs-config-egi
 Source: cvmfs-config-egi
 Maintainer: Dave Dykstra <dwd@fnal.gov>
