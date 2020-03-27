@@ -2,7 +2,7 @@ Summary: CernVM File System EGI Configuration and Public Keys
 Name: cvmfs-config-egi
 Version: 2.4
 # The release_prefix macro is used in the OBS prjconf, don't change its name
-%define release_prefix 3
+%define release_prefix 4
 Release: %{release_prefix}%{?dist}
 Source0: https://github.com/cvmfs/%{name}/archive/%{name}-%{version}.tar.gz
 
@@ -17,7 +17,7 @@ Provides: cvmfs-keys = 1.7
 Obsoletes: cvmfs-init-scripts < 1.0.21
 Provides: cvmfs-init-scripts = 1.0.22
 Obsoletes: cvmfs-config-default
-Obsoletes: cvmfs-config-osg
+Conflicts: cvmfs-config-osg
 
 %description
 Recommended set of CernVM-FS configuration parameters and public keys
@@ -39,6 +39,9 @@ make install-redhat DESTDIR=$RPM_BUILD_ROOT
 %config %{_sysconfdir}/cvmfs/config.d/*
 
 %changelog
+* Fri Mar 27 2020 Dave Dykstra <dwd@fnal.gov> - 2.4-4
+- Mutual Obsoletes: doesn't work, so change to Conflicts: cvmfs-config-osg.
+
 * Fri Mar 27 2020 Dave Dykstra <dwd@fnal.gov> - 2.4-3
 - Add Obsoletes: cvmfs-config-osg to make it easy to switch from OSG to EGI.
 
