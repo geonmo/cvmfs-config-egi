@@ -1,8 +1,8 @@
 Summary: CernVM File System EGI Configuration and Public Keys
 Name: cvmfs-config-egi
-Version: 2.4
+Version: 2.5
 # The release_prefix macro is used in the OBS prjconf, don't change its name
-%define release_prefix 4
+%define release_prefix 1
 Release: %{release_prefix}%{?dist}
 Source0: https://github.com/cvmfs/%{name}/archive/%{name}-%{version}.tar.gz
 
@@ -39,6 +39,12 @@ make install-redhat DESTDIR=$RPM_BUILD_ROOT
 %config %{_sysconfdir}/cvmfs/config.d/*
 
 %changelog
+* Thu Nov 5 2020 Dave Dykstra <dwd@fnal.gov> - 2.5-1
+- Update the configuration for the config repo to apply all the logic
+  from the config repo's default.conf and common.conf.  That is, support
+  USE_CVMFS_CDN and CVMFS_CLIENT_PROFILE and set default CVMFS_PAC_URLS
+  covering the WLCG Web Proxy Auto Discovery.
+
 * Fri Mar 27 2020 Dave Dykstra <dwd@fnal.gov> - 2.4-4
 - Mutual Obsoletes: doesn't work, so change to Conflicts: cvmfs-config-osg.
 
