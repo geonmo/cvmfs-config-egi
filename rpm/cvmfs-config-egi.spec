@@ -1,6 +1,6 @@
 Summary: CernVM File System EGI Configuration and Public Keys
 Name: cvmfs-config-egi
-Version: 2.5
+Version: 2.6
 # The release_prefix macro is used in the OBS prjconf, don't change its name
 %define release_prefix 1
 Release: %{release_prefix}%{?dist}
@@ -39,6 +39,9 @@ make install-redhat DESTDIR=$RPM_BUILD_ROOT
 %config %{_sysconfdir}/cvmfs/config.d/*
 
 %changelog
+* Mon May 29 2021 Dave Dykstra <dwd@fnal.gov> - 2.6-1
+- Change debian/format to 1.0 (non-native) to fix OBS Debian_10 build.
+
 * Thu Nov 5 2020 Dave Dykstra <dwd@fnal.gov> - 2.5-1
 - Update the configuration for the config repo to apply all the logic
   from the config repo's default.conf and common.conf.  That is, support

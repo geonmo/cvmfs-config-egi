@@ -1,7 +1,7 @@
 # created by obsupdate.sh, do not edit by hand
-Debtransform-Tar: cvmfs-config-egi-2.5.tar.gz
+Debtransform-Tar: cvmfs-config-egi-2.6.tar.gz
 Format: 1.0
-Version: 2.5.1
+Version: 2.6.1
 Binary: cvmfs-config-egi
 Source: cvmfs-config-egi
 Maintainer: Dave Dykstra <dwd@fnal.gov>
